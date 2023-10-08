@@ -16,13 +16,13 @@ client:on('messageCreate', function(message)
 
         -- Crie um embed e configure a imagem como um campo
         local embed = {
-            title = authorName .. ":", -- Nome do autor da mensagem original
+            title = authorName .. " :", -- Nome do autor da mensagem original
             image = { url = imageUrl },
-            color = FF0000, -- Cor do embed (vermelho)
+            color = 0xFF0000, -- Cor do embed (vermelho)
 
             -- Se tiver uma mensagem junto com a imagem anexada, aparecerá no rodapé do embed
             footer = {
-                text = imageMessage ~= "" and imageMessage or "Sem mensagem adicional"
+                text = imageMessage ~= "" and imageMessage or "Sem mensagem adicional."
             },
 
         }
